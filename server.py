@@ -6,8 +6,8 @@ app = Flask(__name__)
 def funRoot():
     return 'ROOT CHECKERBOARD'
 
-@app.route('/<col>/<row>/<color1>/<color2>')
-def play(col, row, color1, color2):
+@app.route('/<row>/<col>/<color1>/<color2>')
+def play(row, col, color1, color2):
     return render_template("index.html", Rcol = int(col), Rrow = int(row), Rcolor1 = color1, Rcolor2 = color2)
 
 
