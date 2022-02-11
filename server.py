@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def funRoot():
-    return 'ROOT'
+    return 'ROOT CHECKERBOARD'
 
-@app.route('/play/<n>/<c>')
-def play(n, c):
-    return render_template("index.html", timesN = int(n), phraseColor = c)
+@app.route('/<col>/<row>/<color1>/<color2>')
+def play(col, row, color1, color2):
+    return render_template("index.html", Rcol = int(col), Rrow = int(row), Rcolor1 = color1, Rcolor2 = color2)
 
 
 if __name__ == "__main__":

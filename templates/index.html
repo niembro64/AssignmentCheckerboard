@@ -19,11 +19,13 @@
     </head>
     <body>
         <h1>Playground</h1>
-        <p>PhraseColor: {{ phraseColor }}</p>
-        <!-- <p>TimesN: {{ timesN }}</p> -->
+        <p>PhraseColor: {{ Rcol }}</p>
+        <p>PhraseColor: {{ Rrow }}</p>
+        <p>PhraseColor: {{ Rcolor1 }}</p>
+        <p>PhraseColor: {{ Rcolor2 }}</p>
         <div id="items">
-            {% for x in range(0,timesN): %}
-            <div class="piece" style="background-color: {{phraseColor}}"
+            {% for x in range(0,Rcol): %}
+            <div class="piece" style="background-color: {{Rcolor1}}"
             ></div>
             {% endfor %}
         </div>
