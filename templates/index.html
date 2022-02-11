@@ -18,11 +18,11 @@
         <!-- <img src="{{ url_for('static', filename='img.jpg') }}"> -->
     </head>
     <body>
-        <h1>Playground</h1>
-        <p>PhraseColor: {{ Rcol }}</p>
-        <p>PhraseColor: {{ Rrow }}</p>
-        <p>PhraseColor: {{ Rcolor1 }}</p>
-        <p>PhraseColor: {{ Rcolor2 }}</p>
+        <h1>Checker Board</h1>
+        <p>Columns: {{ Rcol }}</p>
+        <p>Rows: {{ Rrow }}</p>
+        <p>First Color: {{ Rcolor1 }}</p>
+        <p>Second Color: {{ Rcolor2 }}</p>
         <div id="items">
             {% for x in range(0,Rcol): %}
             <div class="rowdiv">
