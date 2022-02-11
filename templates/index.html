@@ -26,8 +26,12 @@
         <div id="items">
             {% for x in range(0,Rcol): %}
             <div class="rowdiv">
-                {% for y in range(0,Rrow): %}
+                {% for y in range(0,Rrow): %} 
+                {% if ((y+x)%2 == 0): %}
                 <div class="piece" style="background-color: {{Rcolor1}}"></div>
+                {% else: %}
+                <div class="piece" style="background-color: {{Rcolor2}}"></div>
+                {% endif %} 
                 {% endfor %}
             </div>
             {% endfor %}
